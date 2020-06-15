@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>展示审核意见</title>
+    <!--外部css和js开始-->
+    @include("/common/plugins.html"){}
+    <!--外部css和js结束-->
+</head>
+<body>
+
+<div  class="weadmin-body-1">
+    <form  class="layui-form" enctype="multipart/form-data">
+        <ul class="layui-timeline">
+            @if(tool.isNotEmpty(auditlist)){
+            @for(list in auditlist){
+            <li class="layui-timeline-item">
+                <i class="layui-icon layui-timeline-axis"></i>
+                <div class="layui-timeline-content layui-text">
+                    <h3 class="layui-timeline-title">${list.auditTime}</h3>
+                    <p>
+                        ${list.auditPerson}审核意见：${list.opinion}
+                        <br>
+                        理由：${list.auditReason}
+                        <br>
+                    </p>
+                </div>
+            </li>
+            @}
+            @}else{
+            <h3 class="layui-timeline-title" style="text-align: center;">暂无审核意见</h3>
+            @}
+        </ul>
+    </form>
+</div>
+</body>
+<link rel="stylesheet" href="${ctxPath}/static/css/bsp/project_ext.css">
+</html>

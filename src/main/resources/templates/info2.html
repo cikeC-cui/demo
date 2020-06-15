@@ -1,0 +1,71 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/demo/static/js/layui/css/layui.css">
+    <link rel="stylesheet" href="/demo/static/js/lib/bootstrap-table/bootstrap-table.min.css">
+</head>
+<body>
+
+<script src="/demo/static/js/jquery-1.10.2.min.js"></script>
+<script src="/demo/static/js/layui/layui.js"></script>
+
+<script src="/demo/static/js/lib/bootstrap-table/bootstrap-table1.js"></script>
+<script src="/demo/static/js/lib/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+
+<!--
+<script src="${ctxPath}/static/assets/lib/layui2.2.5/layui.js"></script>
+<script src="${ctxPath}/static/assets/lib/layui2.2.5/layui.extend.js"></script>
+<script src="${ctxPath}/static/js/common/decode.js"></script>
+<script src="${ctxPath}/static/js/common/jsencrypt.min.js"></script>-->
+
+
+
+<div class="layui-fluid weadmin-body">
+    <form class="layui-form" action="">
+        <div class="layui-form-item clearfix">
+            <div class="layui-input-inline">
+                <input type="text" id="condition" placeholder="请输入项目名称" autocomplete="off" class="layui-input" >
+            </div>
+            <div class="fr">
+                <div class="layui-btn-group">
+                    <button class="layui-btn" data-type="reload" type="button" onclick="Info2.search()"><i class="layui-icon">&#xe615;</i>查询</button>
+                    <button class="layui-btn" type="reset"><i class="layui-icon">&#xe00A;</i>重置</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-elem-quote">
+            <div class="layui-row">
+                <div class="layui-col-md3">
+                    <div class="layui-btn-group">
+                        <button type="button" class="layui-btn" id="add"
+                                onclick="Info2.add()"><i class="layui-icon">&#xe654;</i>新增</button>
+                        <button type="button" class="layui-btn" id="edit"
+                                onclick="Info2.openCeccProjectBaseInfoDetail()"><i class="layui-icon">&#xe642;</i>修改</button>
+                        <button type="button" class="layui-btn" id="del"
+                                onclick="Info2.delete()"><i class="layui-icon">&#xe640;</i>删除</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <table id="CeccProjectBaseInfoTable" ></table>
+</div>
+<script src="/demo/static/js/file/info2.js"></script>
+
+<!--<script>
+    //Demo
+    layui.use('form', function(){
+        var form = layui.form;
+
+        //监听提交
+        form.on('submit(formDemo)', function(data){
+            layer.msg(JSON.stringify(data.field));
+            return false;
+        });
+    });
+</script>-->
+
+</body>
+</html>

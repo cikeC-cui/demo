@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/**
+ * @Description: 项目动态样式表
+ * @Author: wlj
+ * @Date: 2017-7-13
+ */
+
+
+/*------项目动态--------*/
+.projects{margin:15px 0 45px;}
+.project-list{margin-bottom:55px;}
+.projects .item{padding:17px 0;border-bottom:1px solid #dfdfdf;}
+.item-cover{float:left;width:337px;height:200px;background: #ffffff;overflow: hidden;text-align: center;}
+.item-cover img{height:100%;width:auto;max-width: 100%;transition: all .3s;}
+.item-cover:hover img{transform: scale(1.05,1.05);}
+
+.item-info{margin-left:370px;height:200px;}
+.item-info .item-title{padding-top:1px;}
+.item-info .item-title a{display:block;height:20px;line-height:20px;margin-bottom:25px;color:#010101;font-size:16px;font-weight: normal;}
+.item-info .item-title a:hover{color:#0191d3;}
+.item-info .item-desc{height:80px;margin-bottom:40px;line-height: 20px;color:#494949;overflow: hidden;letter-spacing: 1px;}
+.item-info .item-auth{position:relative;height:30px;line-height: 30px;color:#8F8F8F;}
+.item-auth .date{float:left;height:30px;  line-height:30px;}
+.item-auth .iconGroups{height:30px;}
+.iconGroups span{margin-right:25px;display:inline-block;height:30px;line-height: 30px;cursor: pointer;}
+.iconGroups .icon-see{padding-left:30px;background:url(../../img/projectNews/icon-see.png) no-repeat 0 center;}
+.iconGroups .icon-reply{padding-left:30px;background:url(../../img/projectNews/icon-huifu.png) no-repeat 0 center;}
+.iconGroups span:hover{color:#0191d3;}
+
+/*------项目详情--------*/
+.main{margin-bottom: 40px;}
+.projects-detail{padding:0 25px;margin-top:15px;border:1px solid #EBEBEB;border-radius: 6px;}
+.essay-top{margin:0 -25px;padding:7px 25px;text-align: right;border-bottom:1px solid #EBEBEB;}
+.essay{margin-bottom:20px;}
+.essay-title{padding:20px 0;height:60px;line-height:20px;text-align: center;font-size:16px;border-bottom:1px dashed #EBEBEB;color:#010101;letter-spacing: 1px;}
+.essay-con{padding:20px 0;border-bottom:1px dashed #EBEBEB;border-top:1px dashed #EBEBEB;}
+.essay-con p{text-indent: 2em;color:#606060;line-height: 20px;font-size:14px;}
+.essay-con img{display:block;margin:10px auto;}
+
+.comment-head{position:relative;height:42px;line-height: 42px;}
+.replyCount{position:absolute;left:10px;top:6px;height:30px;}
+.btn-reply{position:absolute;top:6px;right:10px;height:30px;line-height: 30px;width:90px;background:#0191d3;color:#fff;cursor:pointer;border:none;border-radius:6px;transition:all .3s;}
+.btn-reply:hover{background:#057EB9;}
+
+.comment-list .unit{padding:20px 0;border-bottom:1px solid #EBEBEB;}
+.comment-list .unit:last-child{border-bottom:none;}
+.comment-pic{float:left;width:73px;text-align: center;}
+.comment-pic img{margin:0 auto;width:64px;height:64px;border-radius: 100%;}
+.comment-wrap{padding-left:84px;}
+.comment-wrap h6{height:40px;line-height: 40px;color:#0191d3;}
+.comment-wrap .comment-info{height:30px;line-height: 30px;color:#868686;}
+.comment-wrap .comment-con{margin:8px 0;line-height: 20px;color:#323232;}
+.comment-con img{margin-top:10px;display:inline-block;margin-right:10px;width:77px;height:80px;background:#bbb;}
+
+
+.reply-head{height:30px;line-height: 30px;text-align: right;border-top:1px solid #EBEBEB;}
+.reply-head .reply-count{cursor: pointer;color:#0191d3;}
+.reply-head .reply-count:hover{text-decoration: underline}
+.reply-head .reply-count.active{color:#0191d3;}
+.reply-list{border:1px solid #EBEBEB;}

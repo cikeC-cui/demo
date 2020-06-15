@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/**
+ * @ClassName: index.css
+ * @Description: 首页样式表
+ * @Author: gxj
+ * @Date: 2018-05-18
+ */
+html,body,.main{width: 100%;height: 100%;box-sizing: border-box}
+#app{margin: 0 auto;}
+.top{width: 100%;height: 3.6rem}
+.top img{width: 100%;height: 100%}
+
+.content{background: #f9f9f9}
+.content>div{padding: 0 .38rem;margin-bottom: .2rem;background: #fff;}
+/*公司简介*/
+.title{height: 1.2rem;line-height: 1.2rem;padding-left: .26rem;font-size: .34rem;color: #333;background: url(../img/title-bg.png) no-repeat left center;    background-size: .15rem .35rem;}
+.abstract-img{padding: 0 .54rem;height: 2.82rem}
+.abstract-img img{width: 100%;height: 100%}
+.abstract-info{padding: .4rem 0;line-height: .4rem;font-size: .26rem;color: #272727;text-indent: .5rem}
+/*领导团队*/
+.team{padding-bottom: .6rem !important}
+.team-item{line-height: .46rem;color: #272727;font-size: .26rem}
+.team-item span{padding-left: .1rem}
+/*企业资质*/
+.broadcast{padding: .1rem 0 .2rem;width: 100%;height: 5.6rem;}
+.swiper-container{width: 100%;height: 100%}
+.broadcast-img{margin: 0 auto .2rem;padding: .18rem;width: 4.4rem;height: 3.4rem;border: 1px solid #dcdcdc}
+.broadcast-img img{width: 100%;height: 100%}
+.broadcast-text{width: 5rem;margin: 0 auto .3rem;line-height: .48rem;font-size: .26rem;color: #272727;text-align: center}
+
+
+/*企业文化*/
+.culture-item{margin-bottom: .28rem}
+.culture-item h2{color: #258df2;font-size: .28rem;line-height: .5rem;}
+.culture-item p{color: #272727;font-size: .26rem;line-height: .42rem;}
+
+
+
+
+

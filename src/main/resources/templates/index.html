@@ -1,0 +1,79 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/demo/static/js/layui/css/layui.css">
+    <style>
+        .classOne {
+            width: 200px;
+            height: 100px;
+            background: url(/demo/static/images/songshu.jpg);
+/*
+            background-size: cover;
+*/
+            font-size: 16px;
+            position:relative; left:-15px;
+        }
+        .title_div {
+            position:relative; bottom:0;
+            float: right;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color:white;
+            background-color:#fae6b9;
+        }
+    </style>
+</head>
+<body>
+<script src="/demo/static/js/jquery-1.10.2.min.js"></script>
+<script src="/demo/static/js/layui/layui.js"></script>
+<!--<h1>添加用户信息</h1>
+<form action="mailInfoApi/insertMailInfo" method="post">
+    <input type="submit" value="提交">
+</form>-->
+<div style="width: 100%;height: 15%;background: #1b6d85">
+    <h1 style="padding-top: 20px">
+        <span style="margin-left: 100px">******</span>
+    </h1>
+</div>
+<div style="width: 100%;height: 70%;background: #fae6b9">
+    <div class="classOne" style="width: 100%;height: 100%">
+    <div class="title_div" style="width: 45%;height: 100%">
+    <div style="width: 100%;height: 50%;background: #fae6b9;position: relative;top: 25%" >
+            <div class="layui-form-item" style="margin-left: 20%;">
+                <label class="layui-form-label" style="color: #666">用户名:</label>
+                <div class="layui-input-block">
+                    <input id = "userName" type="text" style="width: 50%;"   lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item" style="margin-left: 20%;">
+
+
+            <label class="layui-form-label" style="color: #666" >密码:</label>
+            <div class="layui-input-inline">
+                <input id = "password" type="password" name="password"  lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+            </div>
+
+        </div>
+        <a id = "login" style="position: relative;top: 95%" type="button" class="layui-btn layui-btn-sm" >&nbsp;&nbsp;&nbsp;登录&nbsp;&nbsp;&nbsp;</a>
+        <a id = "reset" style="position: relative;top: 95%" type="button" class="layui-btn layui-btn-sm" >&nbsp;&nbsp;&nbsp;取消&nbsp;&nbsp;&nbsp;</a>
+    </div>
+
+    </div>
+    </div>
+</div>
+<div style="width: 100%;height: 15%;background: #1b6d85">
+
+</div>
+
+
+<script src="/demo/static/js/file/cjs.js"></script>
+
+</body>
+</html>
+
+<!--href="http://localhost:8099/mailInfoApi/insertMailInfo"
+href="/demo/templates/AddUserInfo.html"
+-->

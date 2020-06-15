@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CECC</title>
+        <meta name="renderer" content="webkit|ie-comp|ie-stand">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        @include("/common/plugins.html"){}
+        <!--外部css和js开始-->
+       
+        <!--外部css和js开始-->
+         <style>
+     	.layui-nav {
+			background-color:#028EFF !important;
+		} 
+		</style>
+    </head>
+
+    <body>
+        <!-- 顶部开始 -->
+        <div class="container" style="background-image:url(${ctxPath}/static/img/bg.png);">
+            <div class="logo">
+                <a href="javascript:void(0)"></a>
+            </div>
+<!--             <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item layadmin-flexible left_open" lay-unselect="">
+                    <a href="javascript:void(0);" layadmin-event="flexible" title="侧边伸缩">
+                        <i class="layui-icon layui-icon-shrink-right" id="LAY_app_flexible"></i>
+                    </a>
+                </li>
+            </ul> -->
+            <ul class="layui-nav right" lay-filter="">
+                <li>
+                    <a href="javascript:void (0);"><span class="icon-user"></span><label>您好，${userName}</label></a>
+                    <input id="userId" type="hidden" value="${userId}" >
+                    <input id="firstLogin" type="hidden" value="${firstLogin}" >
+                    <input id="ischangePwd" type="hidden" value="${changePwd}" >
+                </li>
+                <li><a id="selfInfo"><span class="icon-nav"></span></a></li>
+                <li><a id="changePwd"><span class="icon-nav"></span></a></li>
+                <li><a id="loginout"><span class="icon-nav"></span></a></li>
+            </ul>
+
+        </div>
+        <!-- 顶部结束 -->
+
+        <!-- 左侧菜单开始 -->
+        <div class="left-nav">
+
+            <div id="side-nav">
+                <ul id="nav">
+                    @for(menu in menus){
+                    @if(tool.isEmpty(menu.childMenus)){
+                    <li>
+                        <a _href="${ctxPath}${menu.url}" title="${menu.title}">
+                            <i class="iconfont">${menu.icons}</i>
+                            <cite>${menu.text}</cite>
+                        </a>
+                    </li>
+                    @}else{
+                    <li>
+                        <a href="javascript:void(0);" title="${menu.title}">
+                            <i class="iconfont">${menu.icons}</i>
+                            <cite>${menu.text}</cite>
+                            <i class="iconfont nav_right">&#xe623;</i>
+                        </a>
+                        <#subMenu menu = "${menu}" index = '2'/>
+                    </li>
+                    @}
+                    @}
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="x-slide_left"></div> -->
+        <!-- 左侧菜单结束 -->
+        <!-- 右侧主体开始 -->
+        <div class="page-content">
+            <!--<div class="left_open"></div>-->
+            <div class="layui-tab tab" lay-filter="wenav_tab" id="WeTabTip" lay-allowclose="true">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">欢迎页</li>
+                </ul>
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">
+                        <iframe src='/plat/indexMain' frameborder="0" scrolling="yes" class="weIframe"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content-bg"></div>
+        <!-- 右侧主体结束 -->
+        <!-- 中部结束 -->
+       <!--  底部开始
+        <div class="footer">
+            <div class="copyright">Copyright ©2018 Hussar All Rights Reserved</div>
+        </div>
+         底部结束 -->
+    </body>
+    <!--Tab菜单右键弹出菜单-->
+    <ul class="rightMenu" id="rightMenu">
+        <li data-type="fresh">刷新</li>
+        <li data-type="current">关闭当前</li>
+        <li data-type="other">关闭其它</li>
+        <li data-type="all">关闭所有</li>
+    </ul>
+<link rel="stylesheet" href="${ctxPath}/static/css/project_ext.css">
+<script src="${ctxPath}/static/js/index.js"></script>
+</html>

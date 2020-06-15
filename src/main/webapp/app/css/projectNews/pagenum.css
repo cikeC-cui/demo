@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/**
+ * @Description: 图片新闻页码展示效果css
+ * @Author: wjy
+ * @Date: 2017-10-9
+ */
+.num{position: relative;width: 60px;height: 35px;margin-top: 0px;float: left;background-color: rgba(0, 0, 0, 0);background-image: url("http://mat1.gtimg.com/news/2015/zt/yizhoutupian/img/icon.png");background-repeat: no-repeat;background-attachment: scroll;background-clip: border-box;background-origin: padding-box;background-size: auto auto;background-position: 11px -331px;}
+.currNum{position: absolute;width: 38px;text-align: right;top: -5px;left: -13px;font-family: Georgia;font-style: italic;font-size: 24px;color: #c51115;}
+.totalNum{color: #3c3c3c;position: absolute;text-align: right;top: 8px;left: 28px;font-family: Georgia;font-style: italic;font-size: 18px;}
